@@ -12,7 +12,7 @@ class MainController extends Controller
     public function write1(Request $moji)
     {
         $fw = new frameworks;
-        $fw->up();
+        $fw->serch();
         $data1 = $moji::all();
         return view('testform',compact('data1'));
     }
