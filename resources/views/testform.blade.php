@@ -7,12 +7,9 @@
 @endsection
 
 @section('index')
-    <form action="testform" method="post">
-        @csrf
-        <input type="text" name="textbox1" >
-        <input type="text" name="textbox2" >
-        <input type="submit" value="送信ボタン" >
-    </form>
+
+<p>入力した文字は、{{$data1['textbox1']}}</p>
+<p>入力した文字は、{{$data1['textbox2']}}</p>
 
 @endsection
 

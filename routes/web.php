@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/testform','MainController@write1');
+
+Route::get('/test1',function () {
+    return view('index');
+});
+
 Route::get('/index', 'UserController@index');
 
 Auth::routes();
