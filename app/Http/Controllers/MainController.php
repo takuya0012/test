@@ -12,8 +12,8 @@ class MainController extends Controller
     public function write1(Request $moji)
     {
         $fw = new frameworks;
-        $fw->serch();
+        $userData = $fw->usersSerch();
         $data1 = $moji::all();
-        return view('testform',compact('data1'));
+        return view('testform',compact('data1' , 'userData'));
     }
 }

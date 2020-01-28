@@ -7,9 +7,8 @@ use Illuminate\Support\Facades\DB;
 
 class frameworks extends Model
 {
-    function serch(){
-        $users = DB::select("select * FROM users");
-        var_dump($users);
+    function usersSerch(){
+        return $users = DB::select("select * FROM users");
     }
 
     function dp(){
