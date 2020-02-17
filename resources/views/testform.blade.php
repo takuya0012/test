@@ -44,7 +44,6 @@ for ($i = 0; $i < $objCount; $i++) {
 }
 ?>
 
-
 @endsection
 
 @section('content')
